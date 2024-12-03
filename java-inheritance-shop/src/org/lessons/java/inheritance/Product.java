@@ -8,12 +8,12 @@ public class Product {
 
     // Instance Variables Declaration
 
-    int code;
-    String name;
-    String description;
-    float basePrice;
-    float totalPrice;
-    int iva;
+    private int code;
+    private String name;
+    private String brand;
+    private float basePrice;
+    private float totalPrice;
+    private int iva;
 
     //
 
@@ -22,13 +22,13 @@ public class Product {
 
     Random randomCode = new Random();
 
-    public Product (String name, String description, float basePrice, int iva) {
+    public Product (String name, String brand, float basePrice, int iva) {
 
         this.code = randomCode.nextInt(999999);
 
         this.name = name;
 
-        this.description = description;
+        this.brand = brand;
 
         this.basePrice = basePrice;
 
@@ -44,10 +44,6 @@ public class Product {
 
     public String getTotalPrice() {
         return("Price after taxes will be: " + totalPrice);
-    }
-
-    public String getFullName() {
-        return("Product full name is: " + this.code + "-" + this.name);
     }
 
     //
