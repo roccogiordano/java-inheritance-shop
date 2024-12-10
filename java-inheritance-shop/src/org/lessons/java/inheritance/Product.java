@@ -2,9 +2,10 @@ package org.lessons.java.inheritance;
 
 import java.util.Random;
 
-// Class Definition
+// Product Class Definition
 
 public class Product {
+    
 
     // Instance Variables Declaration
 
@@ -25,15 +26,10 @@ public class Product {
     public Product (String name, String brand, float basePrice, int iva) {
 
         this.code = randomCode.nextInt(999999);
-
         this.name = name;
-
         this.brand = brand;
-
         this.basePrice = basePrice;
-
         this.iva = iva;
-
         this.totalPrice = basePrice + (basePrice / 100 * iva);
 
     }
@@ -79,6 +75,8 @@ public class Product {
     }
 
     //
+
+
 }
 
 //
