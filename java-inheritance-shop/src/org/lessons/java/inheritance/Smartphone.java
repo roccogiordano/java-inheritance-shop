@@ -14,6 +14,13 @@ public class Smartphone extends Product {
     //
 
 
+    // Has-A Relation
+
+    private Object processor = new Processor("SnapDragon", 10);
+
+    //
+
+
     // Smartphone Methods
 
     public Smartphone (String name, String brand, float basePrice, int iva, long imei, int memory) {
@@ -23,6 +30,22 @@ public class Smartphone extends Product {
         this.imei = imei;
         this.memory = memory;
 
+    }
+
+    public void setImei(long imei) {
+        this.imei = imei;
+    }
+
+    public String getImei() {
+        return("Smartphone IMEI is: " + this.imei);
+    }
+
+    public void setMemory(int memory) {
+        this.memory = memory;
+    }
+
+    public String getMemory() {
+        return("Smartphone memory is: " + this.memory + "GB");
     }
 
     //

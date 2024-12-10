@@ -25,6 +25,28 @@ public class Cuffie extends Product {
 
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return("Headphones color is " + this.color);
+    }
+
+    public void setIsWireless(boolean isWireless) {
+        this.isWireless = isWireless;
+    }
+
+    public String getIsWireless() {
+
+        if (this.isWireless == true) {
+            return("This headphones are wireless");
+        } else {
+            return("This headphones aren't wireless");
+        }
+
+    }
+
     //
 
 
