@@ -56,6 +56,10 @@ public class Televisore extends Product {
 
     }
 
+    @Override public String getCode() {
+        return(super.getCode() + " and this product is a TV!");
+    }
+
     //
 
 

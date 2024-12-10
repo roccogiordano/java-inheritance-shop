@@ -47,6 +47,10 @@ public class Cuffie extends Product {
 
     }
 
+    @Override public String getCode() {
+        return(super.getCode() + " and this product is an headphones set!");
+    }
+
     //
 
 

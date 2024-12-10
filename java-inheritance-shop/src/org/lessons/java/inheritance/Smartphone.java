@@ -48,6 +48,10 @@ public class Smartphone extends Product {
         return("Smartphone memory is: " + this.memory + "GB");
     }
 
+    @Override public String getCode() {
+        return(super.getCode() + " and this product is a smartphone!");
+    }
+
     //
 
 
